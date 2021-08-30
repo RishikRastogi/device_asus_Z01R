@@ -10,3 +10,6 @@ allow vendor_init sysfs_ssr_toggle:file w_file_perms;
 
 dontaudit vendor_init adf_file:dir setattr;
 dontaudit vendor_init fac_file:dir setattr;
+
+#Camera-Like Gcam HDR+ Post error
+allow init adsprpcd_file:file mounton;
