@@ -39,7 +39,6 @@ AB_OTA_PARTITIONS += \
     boot \
     dtbo \
     system \
-    vendor \
     vbmeta
 
 AB_OTA_POSTINSTALL_CONFIG += \
@@ -55,6 +54,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml \
     $(LOCAL_PATH)/configs/component-overrides_qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/component-overrides.xml
+
+#RemovePackages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
+#NoCutoutOverlay
+PRODUCT_PACKAGES += \
+    NoCutoutOverlay
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -249,13 +256,13 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor
 
 # FM
-PRODUCT_PACKAGES += \
-    android.hardware.broadcastradio@1.0-impl \
-    FM2 \
-    libqcomfm_jni \
-    qcom.fmradio
+#PRODUCT_PACKAGES += \
+#    android.hardware.broadcastradio@1.0-impl \
+#    FM2 \
+#    libqcomfm_jni \
+#    qcom.fmradio
 
-PRODUCT_BOOT_JARS += qcom.fmradio
+#PRODUCT_BOOT_JARS += qcom.fmradio
 
 # GPS
 PRODUCT_PACKAGES += \
