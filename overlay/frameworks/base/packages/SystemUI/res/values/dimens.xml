@@ -22,12 +22,4 @@
     <dimen name="status_bar_padding_start">14dp</dimen>
     <!-- the padding on the end of the statusbar -->
     <dimen name="status_bar_padding_end">10dp</dimen>
-    <!-- The padding between the notifications and the quick settings container -->
-    <dimen name="qs_notification_padding">0</dimen>
-    <!-- Spacing between system icons. -->
-    <dimen name="status_bar_system_icon_spacing">0dp</dimen>
-    <!-- gap on either side of status bar notification icons -->
-    <dimen name="status_bar_icon_padding">0dp</dimen>
-    <!-- the padding between dots in the icon overflow -->
-    <dimen name="overflow_icon_dot_padding">0dp</dimen>
 </resources>
