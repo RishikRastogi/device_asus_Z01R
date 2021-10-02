@@ -13,3 +13,6 @@ dontaudit vendor_init fac_file:dir setattr;
 
 #Camera-Like Gcam HDR+ Post error
 allow init adsprpcd_file:file mounton;
+
+#Gcam Hdr+ adsprpcd
+allow init adsprpcd_file:file mounton;
