@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_Z01R.mk
+    $(LOCAL_DIR)/p404_Z01R.mk
