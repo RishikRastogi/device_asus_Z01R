@@ -49,3 +49,7 @@
 # Sysfs
 /sys/devices/platform/soc/18800000.qcom,icnss/fw_version                    u:object_r:sysfs_firmware:s0
 /sys/devices/platform/soc/894000.i2c/i2c-3/3-0038/fts_fw_version            u:object_r:sysfs_firmware:s0
+
+#firmwares
+/bt_firmware(/.*)?      u:object_r:bt_firmware_file:s0
+/firmware(/.*)?         u:object_r:firmware_file:s0
