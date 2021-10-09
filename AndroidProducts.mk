@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_Z01R.mk
+    $(LOCAL_DIR)/dot_Z01R.mk
