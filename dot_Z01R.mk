@@ -23,13 +23,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 $(call inherit-product, device/asus/Z01R/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+$(call inherit-product, vendor/dot/config/common_full_phone.mk)
+
+DOT_BUILD_TYPE := UNOFFICIAL
+
+TARGET_BOOT_ANIMATION_RES := 1080
+
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+TARGET_USES_BLUR := true
 
 PRODUCT_BRAND := asus
 PRODUCT_DEVICE := Z01R
 PRODUCT_MANUFACTURER := asus
 PRODUCT_MODEL := Zenfone 5Z
-PRODUCT_NAME := cherish_Z01R
+PRODUCT_NAME := dot_Z01R
 
 WITH_GMS := true
 TARGET_INCLUDE_STOCK_ARCORE := false
